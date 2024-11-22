@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export function Docs() {
   return (
-    <div className="space-y-2 flex flex-col items-center py-10">
+    <div className="space-y-2 py-10">
       <div className="flex items-center">
         <h4>Visit the TanStack libraries:</h4>
         <Button
