@@ -1,20 +1,31 @@
 import { Link } from "@tanstack/react-router";
+import { Button } from "./ui/button";
 
 export function Navbar() {
   return (
     <div className="p-2 flex gap-2">
-      <Link
-        to="/"
-        className="[&.active]:font-bold"
+      <Button
+        asChild
+        variant="link"
       >
-        Home
-      </Link>{" "}
-      <Link
-        to="/about"
-        className="[&.active]:font-bold"
+        <Link
+          to="/"
+          className="[&.active]:font-bold"
+        >
+          Home
+        </Link>
+      </Button>
+      <Button
+        asChild
+        variant="link"
       >
-        About
-      </Link>
+        <Link
+          to="/about"
+          className="[&.active]:font-bold"
+        >
+          About
+        </Link>
+      </Button>
     </div>
   );
 }
