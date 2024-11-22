@@ -26,6 +26,17 @@ export function Navbar() {
           About
         </Link>
       </Button>
+      <Button
+        asChild
+        variant="link"
+      >
+        <Link
+          to="/docs"
+          className="[&.active]:font-bold"
+        >
+          Docs
+        </Link>
+      </Button>
     </div>
   );
 }
